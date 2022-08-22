@@ -59,9 +59,7 @@ li:hover {
     width: 80%.4;
     height: auto;
     margin-left: 12.8%;
-    background-color: rgb(17, 16, 16);
-    
-    
+    background-color: rgb(17, 16, 16);  
 }
 .introduccion{  
     background-color: rgb(189, 112, 112);
@@ -90,6 +88,10 @@ li:hover {
 }
 .texto-recetas-queEs{
     padding: 5px;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 
 

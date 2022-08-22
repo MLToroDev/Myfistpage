@@ -1,0 +1,101 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+aside {
+    width: auto;
+    height: 100vh;
+    background-color: rgb(156, 82, 82);
+    /* Esto lo mantendra en su sitio */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.contenido {
+    width: auto;
+    height: 1000vh;
+    background-color: blanchedalmond;
+    margin: 15px;
+    /* Esto equilibria lo del aside */
+    position: relative;
+    top: 0;
+}
+
+.menu-receta{
+    list-style: none;
+}
+
+.lista {
+    padding: 10px;
+    margin-top: 40%;
+}
+
+.menu-receta-item:hover {
+    background-color: beige;
+}
+.cabecera {
+    background-color: rgb(156, 82, 82);
+    height: auto;
+    width: 100%;
+}
+
+.titulo {
+    width: auto;
+    height: auto;
+    margin-left: 40%;
+
+}
+
+.container {
+    width: 80%.4;
+    height: auto;
+    margin-left: 12.8%;
+    background-color: black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+img {
+    width: 30%;
+    height: 35%;
+    margin-left: 500px;
+}
+.receta{
+    height: 300px;
+    width: 100%;  
+    background-color: beige;
+    margin-left: 0px;
+    border: 1px solid white;
+    display: inline-flex;
+}
+.Ingredientes{
+    
+    margin: 2px;
+    height: 98%;
+    width: 50%;
+}
+.elabora{
+   
+    margin: 2px;
+    height: 98%;
+    width: 50%;
+}
+.title{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+}
+.ingredientes-item-list{
+    
+    padding: 5%;
+    list-style-type: circle black;
+}
