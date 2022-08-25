@@ -11,7 +11,7 @@
   <title>Cómentario</title>
 </head>
 
-<body onload="agregar_fecha">
+<body onload="fechaActual()">
   <div class="container">
     <form id="contact" action="https://testapi.omarcardona.com/" method="post">
       <h3>comentario</h3>
@@ -31,7 +31,7 @@
         </select>
       </fieldset>
       <fieldset>
-        <input placeholder="fecha" type="date" required id="fecha" name="fecha">
+        <input placeholder="fecha" type="date" required id="fecha" name="fecha" disabled>
       </fieldset>
       <fieldset>
         <textarea placeholder="Escribe tu comentario" tabindex="5" required name = "Comentario" ></textarea>
@@ -46,7 +46,7 @@
     function fechaActual() {
       let fecha = document.getElementById("fecha");
       let fechaActual = new Date();
-      let confecha = fechaActual.getFullYear().toLocaleString() + '-' + convertir((fechaActual.getMonth()+1).toString) + '-' + convertir(fechaActual.getDate().toLocaleString());
+      let confecha = fechaActual.getFullYear().toLocaleString() + '-' + convertir((fechaActual.getMonth()+1).toLocaleString()) + '-' + convertir(fechaActual.getDate().toLocaleString());
       fecha.value = confecha;
     }
     let convertir = (data) => {
