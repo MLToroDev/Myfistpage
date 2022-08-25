@@ -42,6 +42,21 @@
       
     </form>
   </div>
+  <script>
+    function fechaActual() {
+      let fecha = document.getElementById("fecha");
+      let fechaActual = new Date();
+      let confecha = fechaActual.getFullYear().toLocaleString() + '-' + convertir((fechaActual.getMonth()+1).toString) + '-' + convertir(fechaActual.getDate().toLocaleString());
+      fecha.value = confecha;
+    }
+    let convertir = (data) => {
+      if (data <= 9) {
+        data = '0' + data;
+      }
+      return data;
+    }
+
+  </script>
 
 </body>
 
